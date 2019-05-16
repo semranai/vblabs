@@ -1,0 +1,20 @@
+avg button
+ Dim Total As Double = 0
+ Dim Count As Double = 0
+ Dim Average As Double = 0
+
+        For I As Integer = 0 To ListBox1.Items.Count - 1
+            Total += Val(ListBox1.Items(I))
+            Count += 1
+        Next
+
+        Average = Total / Count
+ TextBox2.Text = "the avg of " & Count & " is " & Average
+
+clear button
+   ListBox1.Items.Clear()
+        TextBox2.Text = ""
+
+Adding Button
+ ListBox1.Items.Add(TextBox1.Text)
+            TextBox1.Clear()
